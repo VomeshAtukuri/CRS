@@ -166,10 +166,7 @@ if predict_btn:
             Soil and Weather Conditions values in the Dataset.</h5>""", unsafe_allow_html=True)
     df_pred = df[df['label'] == rdf_predicted_value[0]]
     st.dataframe(df_pred.describe(), use_container_width = True)        
-    
 
-
-st.divider()
 with st.expander("General Purpose Visualizations"):
     st.markdown("<h5 style='text-align: center;'>Importance of each Feature in the Model</h5>", unsafe_allow_html=True)
 
